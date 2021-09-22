@@ -33,9 +33,26 @@ class _NewStatefullState extends State<NewStatefull> {
         title: const Text('My First App'),
         backgroundColor: const Color(0xFFE57373),
       ),
-      body: Center(
+      body: Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: NetworkImage(
+                "https://media.istockphoto.com/photos/mountaineer-spreads-arms-to-celebrate-on-mountain-summit-picture-id1264542668?b=1&k=20&m=1264542668&s=170667a&w=0&h=_XDVlxJStpwCWdFbQgDRMVd69p73nqcbuUVdOYPVKe8="),
+            fit: BoxFit.cover,
+          ),
+        ),
         child: Text(
-          'You have captured photo $_count time',
+          ''' 
+          
+          
+          
+          
+    You have captured photo $_count time    
+          
+          
+          
+          
+          ''',
           style: const TextStyle(
             color: Color(0xFFE57373),
             fontSize: 30,
@@ -51,7 +68,7 @@ class _NewStatefullState extends State<NewStatefull> {
         }),
         // Set a icon to the button
         child: const Icon(Icons.add_a_photo_outlined),
-        tooltip: 'Increament',
+        tooltip: 'Click to take selfie',
         elevation: 0.0,
         backgroundColor: const Color(0xFFE57373),
       ),
@@ -74,7 +91,7 @@ class _NewStatefullState extends State<NewStatefull> {
               currentAccountPicture: CircleAvatar(
                 backgroundColor: Colors.green,
                 backgroundImage: NetworkImage(
-                    'https://st2.depositphotos.com/1000393/6507/i/600/depositphotos_65076917-stock-photo-hacker-and-terrorism-fight.jpg'),
+                    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvMYoHYaGSL-f_CiASP8Ekc9KZ8DELB7jujw&usqp=CAU'),
               ),
             ),
             ListTile(
